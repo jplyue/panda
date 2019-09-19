@@ -1,0 +1,24 @@
+.homepage-container {
+    .div-container {
+        padding-top: 20px;
+    }
+    .home-head-left {
+        padding: 30px;
+        font-size: 18px;
+        color: $header-color;
+        background-color: $home-headl-bg-color;
+    }
+    .home-head-split {
+        border-right: 2px solid $home-head-split-border-color;
+    }
+    .home-head-right {
+        padding: 30px;
+        font-size: 18px;
+        color: $header-color;
+        background-color: $home-headr-bg-color;
+    }
+    .icon-exclamation-sign {
+        font-size: 110px;
+        margin-left: 22px;
+    }
+}

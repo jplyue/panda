@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>业务配置平台主页</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="Expires" contect="Mon,12 May 2016 00:20:00 GMT">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="app" class="heightP100">
+  <router-view></router-view>
+</div>
+<div id="navigatorTips"
+     style="display:none;background-color: #ff4949;color:#FFF;position: fixed;top:0;width: 100%;height:30px;line-height: 30px;padding-left: 20px;font-weight: normal;">
+  请使用最新版本的Google Chrome浏览器登陆本系统!
+</div>
+</body>
+<script>
+  if (navigator.userAgent.indexOf('Chrome') === -1) {
+    document.getElementById('navigatorTips').style.display = 'block';
+  } else {
+    document.getElementsByTagName('body')[0].removeChild(document.getElementById('navigatorTips'));
+  }
+</script>
+<script src="static/lib/crypt/rsa.js"></script>
+<script src="static/lib/main.js"></script>
+</html>
